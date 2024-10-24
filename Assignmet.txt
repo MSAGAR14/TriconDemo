@@ -1,0 +1,10 @@
+=> I have 10 commits i want 6 commits and remove the 4 commits from commit history
+
+
+git reset
+git rebase
+git revert
+
+git cherrypick
+git pull
+git fetch
