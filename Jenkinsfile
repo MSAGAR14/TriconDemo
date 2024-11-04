@@ -21,6 +21,23 @@ pipeline {
         //         sh 'pytest test_main.py'
         //     }
         // }
+        stages {
+        stage('Addition') {
+            steps {
+                script {
+                    
+                    def num1 = params.NUMBER1.toInteger()
+                    def num2 = params.NUMBER2.toInteger()
+                    
+                    
+                    def sum = num1 + num2
+                    
+                    
+                    echo "The sum of ${num1} and ${num2} is: ${sum}"
+                }
+            }
+        }
+    }
     }
  
     post {
