@@ -21,7 +21,7 @@ pipeline {
         //         sh 'pytest test_main.py'
         //     }
         // }
-        stages {
+        
         stage('Addition') {
             steps {
                 script {
@@ -37,7 +37,7 @@ pipeline {
                 }
             }
         }
-    }
+    
     }
  
     post {
