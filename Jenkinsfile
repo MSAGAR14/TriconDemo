@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    parameters {
+        string(name: 'NUMBER1', defaultValue: '0', description: 'First number')
+        string(name: 'NUMBER2', defaultValue: '0', description: 'Second number')
+    }
  
     stages {
         stage('Clone Repository') {
